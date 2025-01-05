@@ -1,0 +1,26 @@
+# Album Recommendations
+pop = "Brat by Charli XCX"
+soft_rock = "Paper Mache Dream Balloon by King Gizzard and the Lizard Wizard"
+hard_rock = "Akuma no Uta by Boris"
+exp_rap = "Veteran by JPEGMAFIA"
+trad_rap = "Mignight Marauders by A Tribe Called Quest"
+
+print("Album Recommendations")
+user_preference = input("Pop, Rock, or Rap?: ")
+
+if user_preference == "Pop":
+   print("Listen to " + pop)
+
+if user_preference == "Rock":
+    rock_preference = input("Soft or Hard Rock?: ")
+    if rock_preference == "Soft Rock":
+        print("Listen to " + soft_rock)
+    if rock_preference == "Hard Rock":
+        print("Listen to " + hard_rock)
+
+if user_preference == "Rap":
+    rap_preference = input("Traditional or Experimental Rap?: ")
+    if rap_preference == "Traditional Rap":
+        print("Listen to " + trad_rap)
+    if rap_preference == "Experimental Rap":
+        print("Listen to " + exp_rap)
